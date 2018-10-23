@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 _dirs = os.path.abspath(__file__).split('/')
-BASE_DIR = '/'.join(_dirs[0:-4])
+BASE_DIR = '/'.join(_dirs[0:-2])
 PROJECT_DIR = os.path.dirname(BASE_DIR)
 
 
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites']
+    'django.contrib.sites',
+    'doc']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
