@@ -1,5 +1,7 @@
-PYSOSAdmin's Dev Documentation
-==============================
+COBPC Document Repository
+=========================
+
+This repository is a browsable canonical collection of the documents that define COBPC's governance.
 
 .. toctree::
     :numbered:
@@ -8,7 +10,7 @@ PYSOSAdmin's Dev Documentation
     docs/test
 
 This documentation is a collection of `restructured text files`_ organized with `Sphinx`_ for delivery on site as html
-or as a pdf or other electronic publication. To work with the documentation, you ideally need a local installation and
+or output as a pdf or other electronic publication. To work with the documentation, you currently need a local installation and
 familiarity with:
 
  - `Git`_

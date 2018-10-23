@@ -1,0 +1,43 @@
+{% load sekizai_tags static %}
+{% addtoblock "css" %}
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" />
+    <link href="{% static "css/blog-home.css" %}" rel="stylesheet" />
+{% endaddtoblock %}
+{% addtoblock "js" %}
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+{% endaddtoblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}COBPC{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% render_block "css" %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">COBPC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="{% static "doc/dev/index.html" %}">Document Repository</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}{% endblock content %}
+</div>
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <div class="m-0 text-center text-white">
+            <p>Copyright 2018, COBPC</p>
+        </div>
+    </div>
+</footer>
+{% render_block "js" %}
+</body>
+</html>
