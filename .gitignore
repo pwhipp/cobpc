@@ -10,10 +10,3 @@ manage.py
 *.sqlite3*
 *~
 *.log
-core/settings/austin_master.py
-core/settings/fremont.py.demo
-htmlcov/*
-test_connection.tcl
-testdata.tar.gz
-testdata/
-pysosd/jobs/store/*.yaml
