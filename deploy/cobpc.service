@@ -7,7 +7,7 @@ Type=simple
 Restart=on-failure
 Group=cobpc
 User=cobpc
-ExecStart=/home/cobpc/website/deploy/service_demon.sh
+ExecStart=/home/cobpc/website/cobpc/deploy/service_demon.sh
 
 [Install]
 WantedBy=multi-user.target
