@@ -1,0 +1,4 @@
+export PATH=${VIRTUAL_ENV}/bin:$PATH
+export PYTHONPATH=${VIRTUAL_ENV}/cobpc:${PYTHONPATH}
+export DJANGO_SETTINGS_MODULE=core.settings.production
+alias django=django-admin.py
