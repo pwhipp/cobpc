@@ -1,17 +1,18 @@
 import os
+import sys
+from django.core.exceptions import ImproperlyConfigured
 
 _dirs = os.path.abspath(__file__).split('/')
-BASE_DIR = '/'.join(_dirs[0:-2])
+BASE_DIR = '/'.join(_dirs[0:-4])
 PROJECT_DIR = os.path.dirname(BASE_DIR)
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'bd727j#m#h8*!6)4lm@#u(_-4th!czexed$4g+lfov)6g%%c8c'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
-
+try:
+    sys.path.insert(0, PROJECT_DIR)
+    # noinspection PyPackageRequirements
+    from local import *
+    sys.path.pop(0)
+except ImportError:
+    raise ImproperlyConfigured('You need a local.py file in your project directory - contact paul.whipp@gmail.com')
 
 # Application definition
 
