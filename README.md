@@ -51,6 +51,14 @@ Ensure whatever user you are using has access to the [github repository](https:/
    
 1. For production you need to ensure that the service is run in a more robust manner:
 
+   1. Hook up nginx
+   
+      ``sudo ln -s /home/cobpc/website/cobpc/deploy/nginx.cfg /etc/nginx/sites-available/cobpc``
+      
+      ``sudo ln -s /etc/nginx/sites-available/cobpc /etc/nginx/sites-enabled``
+      
+      ``sudo systemctl reload nginx``
+
    1. Link the service file so systemD can find it, enable it and start it:
    
       ``sudo ln -s /home/cobpc/website/cobpc/deploy/cobpc.service /etc/systemd/system``
