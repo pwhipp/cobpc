@@ -14,6 +14,7 @@ These instructions are for installing on Debian 8 or Ubuntu 16.04 servers (later
 - git
 - python3.7
 
+### Deployment
 
 If deploying remotely, set up nginx and a separate user for the service (e.g. *cobpc*).
 Ensure whatever user you are using has access to the [github repository](https://github.com/pwhipp/cobpc)
@@ -27,6 +28,9 @@ Ensure whatever user you are using has access to the [github repository](https:/
 1. Clone the repo into a subfolder in ``website``
 
    ``git clone git@github.com:pwhipp/cobpc.git``
+1. Link the environment set up into the virtual env
+
+   ``ln -s ${VIRTUAL_ENV}/cobpc/deploy/postactivate bin && . bin/postactivate``
 1. Install the requirements
 
    ``pip install -r cobpc/requirements.txt``

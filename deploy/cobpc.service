@@ -5,9 +5,9 @@ After=network.target
 [Service]
 Type=simple
 Restart=on-failure
-Group=paul
-User=paul
-ExecStart=/home/paul/cobpc/website/deploy/service_demon.sh
+Group=cobpc
+User=cobpc
+ExecStart=/home/cobpc/website/deploy/service_demon.sh
 
 [Install]
 WantedBy=multi-user.target
