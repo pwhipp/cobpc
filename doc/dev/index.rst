@@ -4,12 +4,13 @@ COBPC Document Repository
 This repository is a browsable canonical collection of the documents that define COBPC's governance.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     docs/constitution
     docs/by_laws.rst
     docs/standing_orders.rst
     docs/roles/index
+    docs/requests_for_comment/index.rst
 
 This documentation is a collection of `restructured text files`_ organized with `Sphinx`_ for delivery on site as html
 or output as a pdf or other electronic publication. To work with the documentation, you currently need a local installation and
