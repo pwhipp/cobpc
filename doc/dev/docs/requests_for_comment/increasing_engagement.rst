@@ -4,7 +4,10 @@ Increasing Member Engagement
 Goal
 ----
 
-To have more members volunteering and participating in the day to day operation and maintenance of the club
+To have more members volunteering and participating in the day to day operation and maintenance of the club"
+To clarify, I was thinking the goal would be to have more members shooting matches, and trying out other disciplines.
+I think some people have done IPDEV just to be able to "tick the box" and get that training, eg Ravi and a couple of
+others that haven't gone on to do any IPSC club matches.
 
 Proposal
 --------
