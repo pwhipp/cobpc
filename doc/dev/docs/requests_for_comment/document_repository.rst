@@ -5,10 +5,17 @@ Using this restructured text format allows us to routinely present the document 
 
 Maintaining it on a managed 'point of truth' such as a git repository (e.g. on github) allows us to keep a definitive canonical collection of signed club documents.
 
-
+Management
+----------
 
 This documentation is a collection of `restructured text files`_ organized with `Sphinx`_ for delivery on site as html
-or output as a pdf or other electronic publication. To work with the documentation, you currently need a local installation and
+or output as a pdf or other electronic publication.
+
+It is maintained as a git repository on github so that changes may be managed through pull requests. A webhook will be
+used to automatically update the website when the master branch is updated. Badges or links may also allow access to
+new drafts or upcoming versions.
+
+To work with the documentation, you currently need a local installation and
 familiarity with:
 
  - `Git`_
